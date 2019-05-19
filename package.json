@@ -1,0 +1,22 @@
+{
+  "name": "07_2_node_server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "server_basic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avborik/07_2_node_servers.git"
+  },
+  "author": "Boris Avdeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avborik/07_2_node_servers/issues"
+  },
+  "homepage": "https://github.com/avborik/07_2_node_servers#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
