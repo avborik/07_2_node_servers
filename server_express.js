@@ -2,8 +2,19 @@ const express = require('express');
 const app = express();
 const querystring = require('querystring');
 
+app.use('/css',express.static(__dirname + '/public/css'))
+app.use('/',(req,res,next)=>{
+    console.log('Someone made a request for' + req.url)
+    res.cookie('cookiename','cookievalue')
+
+    next()
+})
+
 app.get('/',(req,res)=>{
     res.send(`
+        <head>
+            <link type="text/css" rel="stylesheet" href="/css/styles.css">
+        </head>
         <html>
             <body>
                 hello dudes
